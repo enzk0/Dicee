@@ -54,5 +54,16 @@ function randomDice2(number) {
       }
 }
 
-randomDice1(randomNumber1());
-randomDice2(randomNumber2());
+var number1 = randomNumber1();
+var number2 = randomNumber2();
+
+if (number1 === number2){
+    document.querySelector("h1").innerHTML = "🐱It's a Draw🐱";
+} else if (number1 > number2){
+    document.querySelector("h1").innerHTML = "🐱Player 1 Wins!!";
+} else {
+    document.querySelector("h1").innerHTML = "Player 2 Wins!!🐱";
+}
+
+randomDice1(number1);
+randomDice2(number2);
