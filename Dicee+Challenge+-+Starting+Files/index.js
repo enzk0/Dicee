@@ -1,9 +1,11 @@
 function randomNumber1() {
     var num1 = Math.floor(Math.random() * 6) + 1;
+    return num1;
 }
 
 function randomNumber2() {
     var num2 = Math.floor(Math.random() * 6) + 1;
+    return num2;
 }
 
 function randomDice1(number) {
@@ -51,3 +53,6 @@ function randomDice2(number) {
           break;
       }
 }
+
+randomDice1(randomNumber1());
+randomDice2(randomNumber2());
