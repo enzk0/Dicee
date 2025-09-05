@@ -67,3 +67,6 @@ if (number1 === number2){
 
 randomDice1(number1);
 randomDice2(number2);
+
+//just a test
+
